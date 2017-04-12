@@ -1,0 +1,65 @@
+body {
+    font-family: Oswald, "Open Sans", sans serif;
+}
+.slides div.slide {
+    display: none;
+}
+
+.slides input[type=radio] {
+    display: none;
+}
+
+.slides input[type=radio]:checked + label + .slide {
+    display: block;
+}
+
+.slides input[type=radio] + label {
+    font-size: 18px;
+    color: #8f8f8f;
+    position: relative;
+    padding-left: 30px;
+}
+
+.slides input[type=radio] + label:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #8f8f8f;
+    position: absolute;
+    top: 50%;
+    margin-top: -12.5px;
+    left: 0;
+    color: #fff;
+    padding-left: 7px;
+}
+
+.slides input[type=radio]:checked + label {
+    color: #29c5e6;
+}
+
+.slides input[type=radio]:checked + label:before {
+    background-color: #29c5e6;
+}
+
+.slides input[type=radio]#one + label:before {
+    content: "1";
+}
+.slides input[type=radio]#two + label:before {
+    content: "2";
+}
+.slides input[type=radio]#three + label:before {
+    content: "3";
+}
+.slides input[type=radio]#four + label:before {
+    content: "4";
+}
+
+.slides div.jumbotron {
+    padding-top: 40px;
+    padding-bottom: 170px;
+    border-radius: 0;
+}
+
+.jumbotron h2 {
+    font-weight: 300;
+}
